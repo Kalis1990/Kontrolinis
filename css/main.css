@@ -1,9 +1,61 @@
-.column{
+@import url(../css/layout.css);
+
+body{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+section{
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top:50%;
+    left:10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(30%);
+    align-items: center;
+    
+}
+.main-column{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* grid-template-columns: 1fr 1fr 1fr 1fr;  same shit*/
     gap: 20px;
-    color: white;
+    color: black;
     text-decoration: uppercase;
     font-weight: bold;
+    width: 80%;
+
+}
+.title{
+    color:red;
+    text-align: center;
+    font-size: 20px;
+}
+.text{
+    color: grey;
+    font-weight: 100;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.column img{
+    background-color: mediumturquoise;;
+}
+.column1 img{
+    background-color: blue
+}
+.column2 img{
+    background-color: red
+}
+.column3 img{
+    background-color: grey
 }
