@@ -22,6 +22,7 @@ section{
     align-items: center;
     
 }
+
 .main-column{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -45,25 +46,70 @@ section{
 .img{
     width: 200px;
     height: 200px;
-    border-radius: 10px;
 }
 /* .img p{
     margin-left: 0;
     margin-top: 0;
     position: absolute; nesigavo :/
 } */
-.column img{
-    background-color: mediumturquoise;;
+.column > .img-bg{
+    background-color: #70C0C9;
 }
-.column1 img{
-    background-color: blue
+.column > .img-bg1{
+    background-color: #4074BD;
 }
-.column2 img{
-    background-color: red
+.column > .img-bg2{
+    background-color: #E05E46;
 }
-.column3 img{
-    background-color: grey
+.column > .img-bg3{
+    background-color: #919191;
 }
+.img-bg > p{
+    color: #70C0C9;
+    border: 3px solid#70C0C9;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    margin-left: -1.5%;
+    margin-top: -1.5%;
+    position: absolute;
+}
+.img-bg1 > p{
+    color: #4074BD;
+    border: 3px solid #4074BD;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    margin-left: -1.5%;
+    margin-top: -1.5%;
+    position: absolute;
+}
+.img-bg2 > p{
+    color: #E05E46;
+    border: 3px solid #E05E46;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    margin-left: -1.5%;
+    margin-top: -1.5%;
+    position: absolute;
+}
+.img-bg3 > p{
+    color: #919191;
+    border: 3px solid #919191;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    margin-left: -1.5%;
+    margin-top: -1.5%;
+    position: absolute;
+}
+
+
 @media(max-width: 700px){
     .main-column{
         display: grid;
